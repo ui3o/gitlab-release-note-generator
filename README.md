@@ -6,6 +6,9 @@
 
 A Gitlab release note generator that generates release note on latest tag
 
+### **Important !!!**
+- Tag release API was removed from Gitlab and this fork use **[Gitlab release API!!!](https://docs.gitlab.com/ee/api/releases/)**
+
 ## Feature
 -  Generate release note on the latest tag based on merge requests and issues
 -  Distinguished title with issues or merge requests that have the following labels: **enhancement**, **breaking change**, **feature** and **bug**
