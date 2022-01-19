@@ -1,5 +1,6 @@
 const Request = require('request-promise-native');
-const Env = require("../env");
+const Logger = require("../logger");
+const Env = require("../env")
 const QueryString = require("querystring");
 const LinkHeaderParse = require("parse-link-header");
 
