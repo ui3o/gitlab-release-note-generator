@@ -68,13 +68,13 @@ exports.findCommitRefsByProjectIdAndSha = async (projectId, sha, query) => {
 
 exports.createTagReleaseByProjectIdTagNameAndTagId = async (projectId, body) => {
     const uri = `${Env.GITLAB_API_ENDPOINT}/projects/${projectId}/releases`;
-    Logger.debug(`Create tag release by ProjectIdTagNameAndTagId`, 'uri', uri, 'body', body);
+    Logger.debug(`Create tag release by ProjectIdTagNameAndTagId, uri: ${uri}, body: ${body}`);
     return Request({ uri, method: "POST", body, ...options });
 };
 
 exports.updateTagReleaseByProjectIdTagNameAndTagId = async (projectId, tagName, body) => {
     const uri = `${Env.GITLAB_API_ENDPOINT}/projects/${projectId}/releases/${tagName}`;
-    Logger.debug(`Update tag release by ProjectIdTagNameAndTagId`, 'uri', uri, 'body', body);
+    Logger.debug(`Update tag release by ProjectIdTagNameAndTagId, uri: ${uri}, body: ${body}`);
     return Request({ uri, method: "PUT", body, ...options });
 };
 
